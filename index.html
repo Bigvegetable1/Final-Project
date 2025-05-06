@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main</title>
+  <script>
+  function changeText(event) {
+  event.preventDefault();
+  document.getElementById("form").textContent = "Thanks!";
+  }
+  </script>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 50px;
+	  background-color: rgb(163, 32, 32);
+    }
+	h1 {
+	font-size: 50px;
+	}
+	p {
+	font-size: 30px;
+	}
+    img {
+      width: 300px;
+      margin: 20px;
+      cursor: pointer;
+    }
+	#pot {
+	width: 450px;
+	}
+	#text {
+	word-spacing: 320px;
+	}
+  </style>
+</head>
+<body>
+  <h1>Guilty Gear +R Characters</h1>
+  <p>This web site will be about my favorite characters in the game Guilty Gear +R. I will talk about the character's strengths, weaknesses, and moves.</p>
+  <a href="slayer.html">
+    <img src="images/GGAC_Slayer_Portrait.png" alt="Slayer">
+  </a>
+  <a href="potemkin.html">
+    <img src="images/GGAC_Potemkin_Portrait.png" alt="Potemkin" id=pot>
+  </a>
+  </br>
+  <img src=images/GGACR_Slayer_Nameplate.png></img>
+  <img src=images/GGACR_Potemkin_Nameplate.png></img>
+  <h1 id=form>What was your favorite move?</h1>
+  <div>
+  <form name="myform" method="get" onsubmit="changeText(event)";>
+   <input type="text" name="form">
+   <input type="submit" value="Submit">
+  </form>
+  </div>
+</body>
+</html>
