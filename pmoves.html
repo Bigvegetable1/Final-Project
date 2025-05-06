@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page with Image Rollovers</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+	  padding-right: 120px;
+	  background-color: black
+    }
+
+    nav {
+      background-color: black;
+      padding: 15px 20px;
+    }
+
+    nav a {
+      color: gray;
+      text-decoration: none;
+      font-size: 22px;
+    }
+
+    .section {
+      display: flex;
+      padding: 40px 20px;
+      align-items: center;
+    }
+
+    .section {
+      background-color: rgb(143, 26, 26)
+    }
+
+    .section:nth-child(even) {
+      background-color: rgb(163, 32, 32);
+    }
+
+    .image {
+      flex: 1;
+      max-width: 40%;
+    }
+
+    .image img {
+      height: 300px;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+	  padding-left: 80px;
+    }
+
+    .image-container img.hover-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+	  padding-left: 80px;
+    }
+
+    .image-container:hover img.hover-img {
+      opacity: 1;
+    }
+
+    .image-container:hover img.default-img {
+      opacity: 0;
+    }
+
+    .text {
+      flex: 2;
+      padding-left: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .text {
+        padding-left: 0;
+        padding-top: 20px;
+      }
+      .image {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="main.html">Home</a>
+	||||||          
+	<a href="potemkin.html">Character Page</a>
+  </nav>
+  <div class="section">
+    <div class="image">
+      <div class="image-container">
+        <img src="images/210px-GGAC_Potemkin_5K.png" class="default-img">
+        <img src="images/210px-GGXXACPR_Potemkin-5K-Hitbox.png" alt="Hover" class="hover-img">
+      </div>
+    </div>
+    <div class="text">
+	<p style=font-size:40px>This is the moves pages. If you hover over the move, it will display the hitboxes. Green = Hurtbox, Red = Hitbox.</p></br>
+      <h2>Standing Kick</h2>
+      <p>This move is fast, can hit the opponent for a long time, and can lead to knockdowns. It is a important move to use.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="image">
+      <div class="image-container">
+        <img src="images/210px-GGAC_Potemkin_2S.png" class="default-img">
+        <img src="images/210px-GGXXACPR_Potemkin-2S-Hitbox.png" alt="Hover" class="hover-img">
+      </div>
+    </div>
+    <div class="text">
+      <h2>Crouching Slash</h2>
+      <p>This is a strong move with a great hitbox. Its speed is decent for its reach. It also brings the opponent closer to you, allowing pressure continuation, or suprise the opponent with a grab.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="image">
+      <div class="image-container">
+        <img src="images/210px-GGAC_Potemkin_fS.png" class="default-img">
+        <img src="images/210px-GGXXACPR_Potemkin-fS-2-Hitbox.png" class="hover-img">
+      </div>
+    </div>
+    <div class="text">
+      <h2>Standing Slash</h2>
+      <p>A far reaching move that has many uses. It is good at hitting opponents on the ground, as well as in the air.</p>
+    </div>
+	</div>
+	  <div class="section">
+    <div class="image">
+      <div class="image-container">
+        <img src="images/148px-GGAC_Potemkin_2H.png" class="default-img">
+        <img src="images/144px-GGXXACPR_Potemkin-2H-1-Hitbox.png" alt="Hover" class="hover-img">
+      </div>
+    </div>
+    <div class="text">
+      <h2>Crouching Heavy Slash</h2>
+      <p>A slow, strong move that is great at hitting the opponent directly above you. It can lead to very high damage combos.</p>
+    </div>
+	</div>
+	  <div class="section">
+    <div class="image">
+      <div class="image-container">
+        <img src="images/210px-GGACR_Potemkin_632146P.png" class="default-img">
+        <img src="images/207px-GGACR_Potemkin_j632146D_Hitbox.png" alt="Hover" class="hover-img">
+      </div>
+    </div>
+    <div class="text">
+      <h2>Potemikin buster</h2>
+      <p>The best grab in the game. It boasts incredible reach, astonishing damage, and knocks down leading to more pressure.</p>
+    </div>
+	</div>
+</body>
+</html>

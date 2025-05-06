@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page with Image Rollovers</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+	  padding-right: 120px;
+	  background-color: black
+    }
+
+    nav {
+      background-color: black;
+      padding: 15px 20px;
+    }
+
+    nav a {
+      color: gray;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .section {
+      display: flex;
+      padding: 20px 0px;
+      align-items: center;
+    }
+
+    .section {
+      background-color: rgb(143, 26, 26)
+    }
+
+    .section:nth-child(even) {
+      background-color: rgb(163, 32, 32);
+    }
+
+    .image {
+      flex: 1;
+      max-width: 40%;
+    }
+
+    .image img {
+      height: 300px;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+	  padding-left: 80px;
+    }
+
+    .image-container img.hover-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+	  padding-left: 80px;
+    }
+
+    .image-container:hover img.hover-img {
+      opacity: 1;
+    }
+
+    .image-container:hover img.default-img {
+      opacity: 0;
+    }
+
+    .text {
+      flex: 2;
+    }
+	
+	p {
+	font-size: 22px
+	}
+	
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .text {
+        padding-top: 20px;
+      }
+      .image {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="main.html">Home</a>
+	||||||          
+	<a href="slayer.html">Character Page</a>
+  </nav>
+  <div class="section">
+    <div class="image">
+      <div class="image-container">
+        <img src="images/209px-GGAC_Slayer_5K.png" class="default-img">
+        <img src="images/202px-GGXXACPR_Slayer_5K-Hitbox.png" alt="Hover" class="hover-img">
+      </div>
+    </div>
+    <div class="text">
+	<p style=font-size:40px>This is the moves pages. If you hover over the move, it will display the hitboxes. Green = Hurtbox, Red = Hitbox.</p></br>
+      <h2>Standing Kick</h2>
+      <p>This move very fast at only 6 frames, and can lead to good combos on hit, or when blocked, leaves the player at an advantage, so you can continue pressure.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="image">
+      <div class="image-container">
+        <img src="images/154px-GGAC_Slayer_6P.png" class="default-img">
+        <img src="images/167px-GGXXACPR_Slayer_6P-Hitbox.png" alt="Hover" class="hover-img">
+      </div>
+    </div>
+    <div class="text">
+      <h2>Forward Punch</h2>
+      <p>A slow move that boast a large amount of upper body invinciblity, allowing it to blow through the opponent's attacks. If it interrupts the opponent, which causes a counterhit, it can lead to devastating combos.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="image">
+      <div class="image-container">
+        <img src="images/210px-GGAC_Slayer_2H.png" class="default-img">
+        <img src="images/210px-GGXXACPR_Slayer_2H-Hitbox.png" class="hover-img">
+      </div>
+    </div>
+    <div class="text">
+      <h2>Crouching Heavy Slash</h2>
+      <p>Slayer stomps the ground, causing a shockwave which will stagger the opponent, which can be followed up with a basic combo and knockdown. During the startup, he hops, so it can evade some low-hitting moves.</p>
+    </div>
+	</div>
+	  <div class="section">
+    <div class="image">
+      <div class="image-container">
+        <img src="images/210px-GGAC_Slayer_214PP.png" class="default-img">
+        <img src="images/210px-GGXXACPR_Slayer_Pilebunker-Hitbox.png" alt="Hover" class="hover-img">
+      </div>
+    </div>
+    <div class="text">
+      <h2>Pilebunker</h2>
+      <p>A huge punch which does a lot of damage, but is unsafe on block. It is a prime combo starter on counter hit, and can be powered up for more damage.</p>
+    </div>
+	</div>
+	  <div class="section">
+    <div class="image">
+      <div class="image-container">
+        <img src="images/198px-GGAC_Slayer_236D.png" class="default-img">
+        <img src="images/132px-GGXXACPR_Slayer_236D-2-Hitbox.png" alt="Hover" class="hover-img">
+      </div>
+    </div>
+    <div class="text">
+      <h2>Big Bang Upper</h2>
+      <p>A very fast move that has an amazing hitbox. It is very good at hitting opponents in the air, and when it hits launches the opponent all the way off-screen, leading to easy combos.</p>
+    </div>
+	</div>
+</body>
+</html>
